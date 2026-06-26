@@ -1,5 +1,26 @@
+# Virtual Environment
 venv/
+
+# Python cache
 __pycache__/
 *.pyc
+
+# Jupyter
 .ipynb_checkpoints/
+
+# Environment variables
 .env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+
+# Generated model files
+models/*.pkl
+models/*.joblib
+
+# Processed data (optional if you don't want to version it)
+data/processed/*.csv
