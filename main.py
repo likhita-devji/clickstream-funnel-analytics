@@ -1,11 +1,23 @@
-import pandas as pd
-import numpy as np
+from src.config import (
+    RAW_DATA_DIR,
+    PROCESSED_DATA_DIR,
+    MODEL_DIR,
+    REPORT_DIR,
+    DASHBOARD_DIR
+)
 
-print("=" * 50)
-print("Predictive Clickstream Analytics Project")
-print("=" * 50)
+from src.utils import create_directories
 
-print("Pandas Version:", pd.__version__)
-print("NumPy Version:", np.__version__)
+print("=" * 60)
+print("Predictive Clickstream Pipeline")
+print("=" * 60)
 
-print("\nEnvironment Setup Successful!")
+create_directories([
+    RAW_DATA_DIR,
+    PROCESSED_DATA_DIR,
+    MODEL_DIR,
+    REPORT_DIR,
+    DASHBOARD_DIR
+])
+
+print("\nProject Initialized Successfully.")
